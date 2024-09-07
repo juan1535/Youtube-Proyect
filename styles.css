@@ -13,7 +13,7 @@ body {
     grid-template-columns: 240px 1fr;
     grid-template-rows: 56px  1fr;
     grid-template-areas: 
-    'header' 'header'
+    'header  header'
     'sidebar container';
     height: 100vh;
 }
@@ -216,4 +216,36 @@ hr {
     border-radius: 50%;
 }
 
-/* asdwioqpñoqwioiqwje */
+/* Sidebar Start */
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: #212121;
+}
+
+.sidebar-items {
+    display: flex;
+    flex-direction: column;
+    padding: 0 14px;
+    padding-top: 10px;
+}
+
+.sidebar-item {
+    display: flex;
+    color: #fff;
+    text-decoration: none;
+    padding: 0 14px;
+    height: 40px;
+    align-items: center;
+    gap: 20px;
+    border-radius: 10px;
+}
+
+.sidebar-item:hover{
+    background-color: #4c4c4c;
+    transition: 0.5s;
+}
+
+.more {
+    margin-bottom: 10px;
+}
